@@ -26,14 +26,24 @@ SustainLite is a web application with:
 ---
 
 ## 2. Project Structure
-
-```text
 sustainlite/
-├─ package.json          # Node/React dependencies & scripts
-├─ server.js             # Node.js Express server
-├─ public/               # Static assets for React
-├─ src/                  # React components & frontend logic
-└─ backend/
-   ├─ server.py          # FastAPI backend
-   ├─ requirements.txt   # Python dependencies
-   └─ venv/ (optional)   # Python virtual environment (local only)
+├── backend/
+│   ├── main.py              # FastAPI application
+│   ├── database.py          # SQLite database models
+│   ├── schemas.py           # Pydantic schemas
+│   ├── auth.py              # Authentication utilities
+│   ├── requirements.txt     # Python dependencies
+│   └── README.md
+├── frontend/
+│   ├── src/
+│   │   ├── components/      # Reusable components
+│   │   ├── context/         # React context
+│   │   ├── pages/           # Page components
+│   │   ├── services/        # API services
+│   │   ├── App.jsx          # Main app
+│   │   ├── main.jsx         # Entry point
+│   │   └── index.css        # Global styles
+│   ├── package.json
+│   └── README.md
+└── README.md                # This file
+```
